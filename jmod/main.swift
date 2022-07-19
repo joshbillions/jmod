@@ -77,7 +77,6 @@ struct JSONModifier {
     
     private func allJSONPaths(in path: String, existingJSONPaths: Set<String> = []) -> [String] {
         var existing = existingJSONPaths
-        print("Evaluating \(path)")
         let url = URL(fileURLWithPath: path)
         if url.isFileURL,
            url.lastPathComponent.contains(".json") {
